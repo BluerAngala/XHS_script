@@ -659,14 +659,19 @@
         setTimeout(function () {
             if (!disclaimer) {
             } else if (url === "https://www.xiaohongshu.com/explore" || url.includes("https://www.xiaohongshu.com/explore?")) {
+                console.log("发现主页···")
                 updateContainer(buttons.slice(4, 5));
             } else if (url.includes("https://www.xiaohongshu.com/explore/")) {
+                console.log("发现主页···")
                 updateContainer(buttons.slice(0, 1));
             } else if (url.includes("https://www.xiaohongshu.com/user/profile/")) {
+                console.log("用户主页···")
                 updateContainer(buttons.slice(1, 4));
             } else if (url.includes("https://www.xiaohongshu.com/search_result")) {
+                console.log("搜索结果···")
                 updateContainer(buttons.slice(5, 7));
             } else if (url.includes("https://www.xiaohongshu.com/board/")) {
+                console.log("专辑主页···")
                 updateContainer(buttons.slice(7, 8));
             }
         }, 500)
